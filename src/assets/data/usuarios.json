@@ -1,0 +1,46 @@
+{
+  "usuarios": [
+    {
+      "id": 1,
+      "nombre": "Juan",
+      "direccion": "Latacunga"
+    },
+    {
+      "id": 2,
+      "nombre": "Luis",
+      "direccion": "Esmeraldas"
+    },
+    {
+      "id": 3,
+      "nombre": "Carlos",
+      "direccion": "Ambato"
+    },
+    {
+      "id": 4,
+      "nombre": "Jesús",
+      "direccion": "Chimborazo"
+    }
+  ],
+  "users": [
+    {
+      "email": "jorge@gmail.com",
+      "password": "$2a$10$PwnfAe.BtWsP4rp6.zc.Be.DDWwZx.tFkhRdZ740hnoy.JlV6HKee",
+      "id": 1
+    },
+    {
+      "email": "andres@gmail.com",
+      "password": "$2a$10$ap6dkBYyXHf/9mzaOiDlBuVpCIDeMbaWEwjWqUlmPzzKmhh4mBT7i",
+      "id": 2
+    },
+    {
+      "email": "maria@hotmail.com",
+      "password": "$2a$10$JYaMurbYOEgHL2IVkXjEJ.a07.c9uRO.p9TcUHCS017YiD5ZH/a92",
+      "id": 3
+    },
+    {
+      "email": "maria@gmail.com",
+      "password": "$2a$10$xAOnzV86ze/TXDS.0oebQOX38qmXjJRcaVvCjoWEJEc09JV4TWOny",
+      "id": 4
+    }
+  ]
+}
