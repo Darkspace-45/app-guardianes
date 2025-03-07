@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { FormularioLoginComponent } from "../../components/formulario-login/formulario-login.component";
 
 @Component({
@@ -6,7 +6,8 @@ import { FormularioLoginComponent } from "../../components/formulario-login/form
   standalone: true,
   imports: [FormularioLoginComponent],
   templateUrl: './login.component.html',
-  styleUrl: './login.component.css'
+  styleUrl: './login.component.css',
+  encapsulation: ViewEncapsulation.None
 })
 export class LoginComponent {
 

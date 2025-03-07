@@ -1,17 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { LoginService } from '../../service/login.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-formulario-login',
   standalone: true,
   imports: [FormsModule],
   templateUrl: './formulario-login.component.html',
-  styleUrl: './formulario-login.component.css'
+  styleUrl: './formulario-login.component.css',
+  encapsulation: ViewEncapsulation.None
 })
 export class FormularioLoginComponent {
 
-  constructor(private servicio:LoginService) { }
+  constructor(private servicio:LoginService, private route:Router) { }
 
   email:any;
   password:any;
@@ -23,6 +25,7 @@ export class FormularioLoginComponent {
       let token = acceso.accessToken
       if(token != ''){
         localStorage.setItem('login', "true");
+        this.route.navigate(['privado']);
       }
     });
   }

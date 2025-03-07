@@ -11,7 +11,7 @@ export const routes: Routes = [
     },
     {
         path: 'privado',
-        component: PrivadoComponent, canActivate: [loginGuard]
+        component: PrivadoComponent
     },
     {
         path: 'login',

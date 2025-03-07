@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
@@ -6,8 +6,15 @@ import { RouterModule } from '@angular/router';
   standalone: true,
   imports: [RouterModule],
   templateUrl: './nav.component.html',
-  styleUrl: './nav.component.css'
+  styleUrl: './nav.component.css',
 })
 export class NavComponent {
+
+  authenticacion():boolean {
+    if(typeof window!=='undefined' && window.localStorage){
+    return localStorage.getItem('login') == 'true';
+    }
+    return false;
+  }
 
 }
